@@ -1,0 +1,61 @@
+ok
+wrongAnswer:y= d91f8785,temp=d91e8785  c_out=1
+wrongAnswer:y= 67aa71f9,temp=67a971f9  c_out=0
+ok                     
+wrongAnswer:y= 78fab24e,temp=78f9b24e  c_out=0
+wrongAnswer:y= aaa3424f,temp=a2a2404f  c_out=1
+wrongAnswer:y= 35dd6803,temp=ab794807  c_out=1
+wrongAnswer:y= 37cc156d,temp=7768276d  c_out=1
+wrongAnswer:y= 91599988,temp=92d8aa91  c_out=1
+wrongAnswer:y= 9faf3a68,temp=9f9d5cc9  c_out=0
+wrongAnswer:y= a1c671b7,temp=81c7659f  c_out=0
+wrongAnswer:y= db0593b2,temp=5b119356  c_out=0
+wrongAnswer:y= 82c6a8c8,temp=0a958c89  c_out=0
+wrongAnswer:y= 90e04198,temp=11bf038c  c_out=0
+wrongAnswer:y= 77468d72,temp=ed4d89d9  c_out=1
+wrongAnswer:y= d895fb5c,temp=d8b4fb55  c_out=1
+wrongAnswer:y= 4b972db6,temp=9a972d6e  c_out=1
+wrongAnswer:y= 3bd80a23,temp=7bb02053  c_out=1
+wrongAnswer:y= f745a019,temp=f594801b  c_out=0
+wrongAnswer:y= f8a457f2,temp=f0c877f1  c_out=0
+wrongAnswer:y= 7f3a6c70,temp=7f2b68d1  c_out=0
+wrongAnswer:y= 8343bcc2,temp=838aee43  c_out=1
+wrongAnswer:y= 17a4950a,temp=56a4c925  c_out=1
+wrongAnswer:y= 4857c36c,temp=2147c3e5  c_out=0
+wrongAnswer:y= 860d3f94,temp=8c0e7f1c  c_out=1
+wrongAnswer:y= aec32cbb,temp=dd4639bb  c_out=1
+wrongAnswer:y= c247fe2c,temp=c356ee2d  c_out=1
+wrongAnswer:y= 59ce8654,temp=d9ad8519  c_out=1
+wrongAnswer:y= dd7bb84b,temp=76f97097  c_out=0
+wrongAnswer:y= aafe63d1,temp=99fb63cf  c_out=0
+wrongAnswer:y= 1a17b3de,temp=ff967bbb  c_out=0
+wrongAnswer:y= 842d37af,temp=7fa7f77f  c_out=0
+wrongAnswer:y= 57e03e36,temp=fdffbd2f  c_out=0
+wrongAnswer:y= 4992cc45,temp=458f7bfd  c_out=0
+wrongAnswer:y= b0f1f504,temp=6fdfecfe  c_out=0
+wrongAnswer:y= 239d5cf2,temp=239c5cf2  c_out=1
+wrongAnswer:y= 5ca6af71,temp=5ca5af71  c_out=1
+wrongAnswer:y= 8124cede,temp=8123cede  c_out=0
+ok                     
+ok                     
+ok                     
+wrongAnswer:y= ad57f2d8,temp=ad56f2d8  c_out=1
+wrongAnswer:y= bb57d5b6,temp=bb56d5b6  c_out=1
+ok                     
+wrongAnswer:y= 0bdf5cef,temp=0bde5cef  c_out=1
+wrongAnswer:y= ced77df7,temp=4ad47de7  c_out=0
+wrongAnswer:y= e1b3937f,temp=6571277f  c_out=0
+wrongAnswer:y= e4a1d4f9,temp=e4819cf9  c_out=0
+wrongAnswer:y= ae15c5fa,temp=ae2cc3f3  c_out=1
+wrongAnswer:y= cb3f147c,temp=d73e3179  c_out=1
+wrongAnswer:y= 2da4d94c,temp=6d2bd859  c_out=1
+wrongAnswer:y= 15ae0312,temp=358e0515  c_out=1
+wrongAnswer:y= 4a4033d8,temp=5440a7b1  c_out=1
+wrongAnswer:y= ad3b5929,temp=5b33b22b  c_out=0
+wrongAnswer:y= 3d1a4670,temp=bc3464d4  c_out=1
+wrongAnswer:y= 937d1a23,temp=96fa5847  c_out=1
+wrongAnswer:y= f0bbb53c,temp=7175a57c  c_out=0
+wrongAnswer:y= e4698d41,temp=d4641c51  c_out=0
+wrongAnswer:y= a2f420d4,temp=a6b704d4  c_out=1
+wrongAnswer:y= 183456b0,temp=50a876a2  c_out=1
+wrongAnswer:y= c6ed0f39,temp=ceec2f35  c_out=1
