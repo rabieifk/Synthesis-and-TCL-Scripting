@@ -7,4 +7,8 @@ RTL design of a simple MIPS processor is here. then I try to modify its arithmet
 
 XOR function is added to the code of MIPS processor which is here. This design is synthesis with Design Compiler and the accuracy of function can be evaluate. the MIPS whish is used here, has one coer with multiple unit. it is 8 bit processor with 32 bit instruction.
 
-The file ["fib.dat"]() is the input for [exmem.v]()
+The file ["fib.dat"](https://github.com/rabieifk/Synthesis-and-TCL-Scripting/blob/master/fib.dat) is the input for [exmem.v](https://github.com/rabieifk/Synthesis-and-TCL-Scripting/blob/master/exmem.v).
+
+
+Using [Modelsim](https://www.mentor.com/company/higher_ed/modelsim-student-edition) to compile MIPS:
+>Vsim –do ~/mips/sim.tcl
