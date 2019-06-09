@@ -1,0 +1,70 @@
+First of all you should simulate your RTL MIPS design in modelsim and verifty its functionality. You can develop your own program based on processor ISA or use attached "fib.dat" file to simulate.
+
+Then you should synthesize your design, for Nangate 45nm technology library file you should find the path belove and use "Nangate_typ.db" to synthesize your design:
+
+/home/icic/Desktop/Vlsi-Project/Code/asynch_sdm_noc/trunk/lib
+
+Prepare your script and apply command below in terminal window to do synthesis:
+
+dc_shell -f <script file name>
+
+the copy the generated verilog netlist to your modelsim project and add to project, repeat first simulation with new MIPS module.
+
+after verification, add some codes to your testbench to dump vcd file:
+
+module cpu_tester();
+  reg clk;
+  
+  integer i;
+  
+  CPU c1(clk);
+  
+  initial begin
+    #0; clk = 0; 
+    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    $dumpfile ("subliminal.vcd");
+    $dumpvars(0,c1);
+    $dumpon;
+   ////////////////////////////////////////////////////////////////////////////////////////////////////////
+    
+   
+    for (i = 0; i < 100000;i = i + 1)begin
+      #10;
+      clk = ~clk;
+    end    
+    ////////////////////////////////////////////////////////////////////////////////////////////////////
+    $dumoff;
+    /////////////////////////////////////////////////////////////////////////////////////////////////////
+  end
+    
+endmodule
+
+repeat simulation and produce vcd file
+
+convert vcd file to saif file using command below:
+
+vcd2saif -input <vcd file> -output <saif file>
+
+use design compiler and report power based on saif file. a sample script is below to read netlist and saif file and generate power report:
+
+
+
+
+
+///////////////////////////////////////////////////////////////////
+set power_preserve_rtl_hier_names "true"
+
+read_file -format verilog cnt_syn.v  (also this command: read_verilog <verilog file>)
+
+create_clock -name CLK -period 100000
+
+
+set find_ignore_case "true"
+
+read_saif -input cnt_bw1.saif -instance_name "TB_CNT_BHV/UUT" -verbose
+
+set find_ignore_case "false"
+
+report_power > power_toggle_dc_shell.rpt
+
