@@ -1,0 +1,53 @@
+remove_design -all
+set power_preserve_rtl_hier_names "true"
+set base_dir /home/icic/Desktop/mips
+define_design_lib work -path "work"
+set topname "mips"
+
+set link_library  /home/icic/Desktop/mips/UofU_Digital_v1_2.db
+set target_library /home/icic/Desktop/mips/UofU_Digital_v1_2.db
+#analyze -library WORK -format verilog $base_dir/mips.v
+analyze -library WORK -format verilog /home/icic/Desktop/mips/mips.v
+elaborate $topname -lib work -update
+
+current_design $topname
+
+set auto_wire_load_selection "true"
+#set default_wire_load_mode "true"
+create_clock -period 6.97 {"clk"}
+#100 for area optimization
+#set_max_delay 0
+#group_path -name COMBO -from [all_inputs] -to [all_outputs]
+
+
+set_cost_priority -delay
+
+
+#remove_constraint -all
+#remove_clock -all
+#set_max_area 0
+compile
+#compile_ultra -area_effort
+#compile_ultra -timing_high_effort_script 
+set sdfout_time_scale 0.001000
+                 
+redirect change_names \
+{ change_names -rules verilog -hierarchy -verbose }
+write -format verilog -hierarchy -output /home/icic/Desktop/mips/reportArea/mips_synclk6.97new.v
+write -format ddc -hierarchy -output "/home/icic/Desktop/mips/reportArea/mips.ddc"
+#write -hier -format verilog -out "/home/icic/Desktop/mips/reportArea/mips.v"
+write_sdf "/home/icic/Desktop/mips/reportArea/mips.sdf"
+#write_sdc "/home/icic/Desktop/mips/reportArea/mips.sdc"
+
+report_timing -nworst 10 > "/home/icic/Desktop/mips/reportArea/mips.timing_clk6.97new.report"
+report_area -hierarchy > "/home/icic/Desktop/mips/reportArea/mips.area_clk6.97.report"
+report_constraint -all_violators  > "/home/icic/Desktop/mips/reportArea/mips.const_clk6.97new.report"
+report_power -hier > "/home/icic/Desktop/mips/reportArea/mips.power_clk6.97new.report"
+report_design > "/home/icic/Desktop/mips/reportArea/mips.designnew.report"
+report_cell > "/home/icic/Desktop/mips/reportArea/mips.cell_clk6.97new.report"
+read_file -format ddc mips.ddc
+set find_ignore_case "true"
+read_saif -input mips.saif -instance_name "top/dut/mips"  -verbose
+set find_ignore_case "false"
+report_power > /home/icic/Desktop/mips/reportArea/mips.powernew.rpt
+exit
