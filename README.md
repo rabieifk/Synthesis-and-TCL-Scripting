@@ -22,3 +22,6 @@ In sync.tcl file with report-timing, report-power, report-area and report-constr
 instaed of compile, in sync.tcl if use -compile_ultera timing_high_effort_script, store the result in a seprate file.
 
 [slack](https://www.researchgate.net/post/Is_anyone_working_on_synopsys_tool_DC_Compiler) in a timing path,we try and bring it down to Zero. slack in clock of 6.11 will be zero in this tutorial.
+
+help you to have more detail of your design, in sync.tcl:
+>Write -format verilog -hierarchy -output /home/icic/Desktop/report/mips_syn.v
