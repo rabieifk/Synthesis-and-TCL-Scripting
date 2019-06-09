@@ -12,3 +12,4 @@ The file ["fib.dat"](https://github.com/rabieifk/Synthesis-and-TCL-Scripting/blo
 
 Using [Modelsim](https://www.mentor.com/company/higher_ed/modelsim-student-edition) to compile MIPS:
 >Vsim –do ~/mips/sim.tcl
+
