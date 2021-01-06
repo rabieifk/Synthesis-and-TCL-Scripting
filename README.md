@@ -1,5 +1,6 @@
 # Synthesis-and-TCL-Scripting
 
+**Objective:** Changing the core of MIPS processor to add the XOR instruction and synthesis the new MIPS to calculate area, delay and power.
 [Design Compiler](https://www.synopsys.com/implementation-and-signoff/rtl-synthesis-test/design-compiler-graphical.html) is a Synopsys synthesis tool. 
 
 
