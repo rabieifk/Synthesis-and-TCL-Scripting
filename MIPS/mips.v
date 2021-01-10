@@ -1,10 +1,5 @@
 //-------------------------------------------------------
 // mips.v
-// Max Yi (byyi@hmc.edu) and David_Harris@hmc.edu 12/9/03
-//
-// Modified by Erik Brunvand (University of Utah) to have 
-// consistent little endian byte ordering for reading and 
-// writing (12/06)
 // 
 // Note that this uses Verilog 2001 syntax
 //-------------------------------------------------------
