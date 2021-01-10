@@ -1,6 +1,6 @@
 # Synthesis-and-TCL-Scripting
 
-**Objective:** Changing the core of the given [MIPS](https://github.com/rabieifk/Synthesis-and-TCL-Scripting/tree/master/MIPS) processor to add the XOR instruction and synthesis the new processor to calculate area, delay and power.
+**Objective:** Changing the core of the given [MIPS](https://github.com/rabieifk/Synthesis-and-TCL-Scripting/tree/master/MIPS) processor to add the XOR function and synthesis the new processor to calculate area, delay and power.
 
 In this projest [Design Compiler](https://www.synopsys.com/implementation-and-signoff/rtl-synthesis-test/design-compiler-graphical.html) is used as a Digital Design Synopsys® And Cadence® CAD Tools.
 
